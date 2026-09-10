@@ -289,6 +289,7 @@ _(Gambar Entity Relationship Diagram dilampirkan pada dokumen)_
 
 _(Gambar Low-Fidelity Wireframe dilampirkan pada dokumen)_
 ![Low-Fidelity Wireframe MONI](assets/wireframe-lofi.webp)
+![Low-Fidelity Wireframe MONI](assets/wireframe-lofi-laptop.webp)
 
 **g. Gantt Chart**
 
