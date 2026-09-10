@@ -221,15 +221,64 @@ _(Gambar Use Case Diagram dilampirkan pada dokumen)_
 
 Berikut adalah tabel kebutuhan fungsional (Functional Requirements) untuk use case yang telah dirancang:
 
-| FR                                     | Deskripsi                                                                                                                                   |
-| :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
-| **FR 1 Registrasi & Login**            | Sistem harus memungkinkan pengguna mendaftar dengan email/password dan login dengan validasi kredensial.                                    |
-| **FR 2 Kelola target keberangkatan**   | Sistem harus memungkinkan pengguna menetapkan negara tujuan (opsional), mata uang tujuan, target tanggal, dan nominal dana yang dibutuhkan. |
-| **FR 3 Catat Transaksi Manual**        | Sistem harus memungkinkan pengguna mencatat transaksi pemasukan/pengeluaran secara manual beserta kategorinya.                              |
-| **FR 4 Unggah Mutasi Rekening CSV**    | Sistem harus dapat menerima unggahan file CSV mutasi rekening dan mem-parsing datanya menjadi transaksi.                                    |
-| **FR 5 Tarik Data Nilai Tukar**        | Sistem harus menjalankan background worker (cron job) yang menarik data kurs dari API finansial publik secara berkala.                      |
-| **FR 6 Prediksi Tren Kurs**            | Sistem harus memproses data historis kurs dengan model regresi deret waktu untuk memprediksi tren jangka pendek.                            |
-| **FR 7 Kalkulasi Ulang Target Harian** | Sistem harus mengalkulasi ulang target tabungan harian secara otomatis setiap kali terjadi perubahan signifikan pada kurs.                  |
+<table style="border-collapse: collapse; width: 100%; border: 1px solid black; font-family: sans-serif; text-align: left;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid black; padding: 8px; width: 30%; background-color: #f2f2f2;">FR</th>
+      <th style="border: 1px solid black; padding: 8px; background-color: #f2f2f2;">Deskripsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>FR 1 Registrasi & Login</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">Sistem harus memungkinkan pengguna mendaftar dengan email/password dan login dengan validasi kredensial.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>FR 2 Kelola target keberangkatan</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">Sistem harus memungkinkan pengguna menetapkan negara tujuan (opsional), mata uang tujuan, target tanggal, dan nominal dana yang dibutuhkan.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>FR 3 Catat Transaksi Manual</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">Sistem harus memungkinkan pengguna mencatat transaksi pemasukan/pengeluaran secara manual beserta kategorinya.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>FR 4 Unggah Mutasi Rekening CSV</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">Sistem harus dapat menerima unggahan file CSV mutasi rekening dan mem-parsing datanya menjadi transaksi.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>FR 5 Tarik Data Nilai Tukar</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">Sistem harus menjalankan background worker (cron job) yang menarik data kurs dari API finansial publik secara berkala.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>FR 6 Prediksi Tren Kurs</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">Sistem harus memproses data historis kurs dengan model regresi deret waktu untuk memprediksi tren jangka pendek.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>FR 7 Kalkulasi Ulang Target Harian</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">Sistem harus mengalkulasi ulang target tabungan harian secara otomatis setiap kali terjadi perubahan signifikan pada kurs.</td>
+    </tr>
+        <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>FR 8 Tarik Data Nilai Tukar</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">Sistem harus menampilkan progres tabungan, target harian terkini, dan sisa waktu menuju keberangkatan.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>FR 9 Prediksi Tren Kurs</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">Sistem harus menampilkan grafik visual proyeksi kelayakan dana terhadap tenggat waktu keberangkatan.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>FR 10 Kalkulasi Ulang Target Harian</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">Sistem harus mengirim notifikasi kepada pengguna saat terdeteksi potensi defisit dana.</td>
+          <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>FR 11 Prediksi Tren Kurs</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">Sistem harus menganalisis histori transaksi pengguna dan merekomendasikan kategori pengeluaran non-esensial yang dapat dipangkas.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;"><strong>FR 12 Kalkulasi Ulang Target Harian</strong></td>
+      <td style="border: 1px solid black; padding: 8px;">Sistem harus menyediakan kategori transaksi standar (esensial/non-esensial) untuk klasifikasi otomatis maupun manual.</td>
+    </tr>
+    </tr>
+  </tbody>
+</table>
 
 **e. Entity Relationship Diagram (ERD)**
 
