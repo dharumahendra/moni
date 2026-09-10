@@ -215,7 +215,7 @@ Membantu pengguna merealisasikan rencana perjalanan ke luar negeri, mulai dari l
 **c. Use Case Diagram**
 
 _(Gambar Use Case Diagram dilampirkan pada dokumen)_
-![Use Case Diagram Aplikasi MONI](images/use-case.webp)
+![Use Case Diagram Aplikasi MONI](assets/use-case.webp)
 
 **d. Functional Requirements**
 
@@ -283,12 +283,12 @@ Berikut adalah tabel kebutuhan fungsional (Functional Requirements) untuk use ca
 **e. Entity Relationship Diagram (ERD)**
 
 _(Gambar Entity Relationship Diagram dilampirkan pada dokumen)_
-![ERD Database MONI](images/erd-moni.webp)
+![ERD Database MONI](assets/erd-moni.webp)
 
 **f. Low-Fidelity Wireframe**
 
 _(Gambar Low-Fidelity Wireframe dilampirkan pada dokumen)_
-![Low-Fidelity Wireframe MONI](images/wireframe-lofi.webp)
+![Low-Fidelity Wireframe MONI](assets/wireframe-lofi.webp)
 
 **g. Gantt Chart**
 
